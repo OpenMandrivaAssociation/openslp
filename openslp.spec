@@ -1,6 +1,6 @@
 %define	name	openslp
 %define	version	1.2.1
-%define	release	3mdk
+%define	release	%mkrel 4
 
 %define	major	1
 %define	libname	%mklibname %{name} %{major}
@@ -12,7 +12,6 @@ Release:	%release
 Summary:	OpenSLP implementation of Service Location Protocol V2 
 License:	BSD-like
 Group:		Networking/Other
-Requires(pre):	chkconfig initscripts rpm-helper
 URL:		http://www.openslp.org/
 BuildRoot:	%{_tmppath}/%{name}-root
 Source0:	http://prdownloads.sourceforge.net/openslp/%{name}-%{version}/%{name}-%{version}.tar.bz2
@@ -89,7 +88,7 @@ rm -rf %buildroot
 %post
 %_post_service slpd
 
-%PreUn 
+%preun 
 %_preun_service slpd
 
 %post -n %{libname} -p /sbin/ldconfig
