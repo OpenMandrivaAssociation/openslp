@@ -1,6 +1,5 @@
 %define	name	openslp
 %define	version	1.2.1
-%define	release	%mkrel 5
 
 %define	major	1
 %define	libname	%mklibname %{name} %{major}
@@ -8,7 +7,7 @@
 
 Name:		%name
 Version: 	%version
-Release:	%release
+Release:	%mkrel 6
 Summary:	OpenSLP implementation of Service Location Protocol V2 
 License:	BSD-like
 Group:		Networking/Other
