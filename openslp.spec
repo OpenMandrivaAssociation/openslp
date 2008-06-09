@@ -94,7 +94,7 @@ rm -rf %buildroot
 
 %postun -n %{libname} -p /sbin/ldconfig
 
-%Files
+%files
 %defattr(644,root,root,755)
 %doc doc/*
 %config(noreplace) %_sysconfdir/slp.conf
