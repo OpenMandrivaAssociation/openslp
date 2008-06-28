@@ -61,6 +61,7 @@ You'll also need to have the %{name} package installed.
 rm -rf `find -name CVS`
 
 %build
+autoreconf -fis
 %serverbuild
 %configure --localstatedir=/var
 %make
