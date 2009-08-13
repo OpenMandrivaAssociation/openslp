@@ -7,13 +7,14 @@
 
 Name:		%name
 Version: 	%version
-Release:	%mkrel 8
+Release:	%mkrel 9
 Summary:	OpenSLP implementation of Service Location Protocol V2 
 License:	BSD-like
 Group:		Networking/Other
 URL:		http://www.openslp.org/
 BuildRoot:	%{_tmppath}/%{name}-root
 Source0:	http://prdownloads.sourceforge.net/openslp/%{name}-%{version}/%{name}-%{version}.tar.bz2
+Patch0:		openslp-1.2.1-lsb.patch
 
 %Description
 Service Location Protocol is an IETF standards track protocol that
@@ -58,6 +59,7 @@ You'll also need to have the %{name} package installed.
 
 %prep
 %setup -q
+%patch0 -p1
 rm -rf `find -name CVS`
 
 %build
