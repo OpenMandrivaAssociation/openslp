@@ -69,7 +69,7 @@ autoreconf -fis
 %make
 
 %install
-rm -rf $RPM_BUILD_ROOT
+rm -rf %{buildroot}
 %makeinstall_std
 #fix doc
 rm -rf installeddoc
