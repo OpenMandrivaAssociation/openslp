@@ -1,0 +1,22 @@
+diff -p -up openslp-1.2.1/etc/slpd.all_init.lsb openslp-1.2.1/etc/slpd.all_init
+--- openslp-1.2.1/etc/slpd.all_init.lsb	2009-08-13 10:34:27.000000000 -0300
++++ openslp-1.2.1/etc/slpd.all_init	2009-08-13 10:37:04.000000000 -0300
+@@ -7,6 +7,18 @@
+ # chkconfig: 345 13 87
+ # description: OpenSLP daemon for the Service Location Protocol
+ # processname: slpd
++#
++### BEGIN INIT INFO
++# Provides: slpd
++# Required-Start: $network
++# Required-Stop: $network
++# Default-Start: 3 4 5
++# Short-Description: OpenSLP daemon for the Service Location Protocol
++# Description: Service Location Protocol is an IETF standards track protocol that
++#              provides a framework to allow networking applications to discover the
++#              existence, location, and configuration of networked services in
++#              enterprise networks.
++### END INIT INFO
+ 
+ # Author: Miquel van Smoorenburg, <miquels@drinkel.nl.mugnet.org>
+ #     Modified for RHS Linux by Damien Neil
