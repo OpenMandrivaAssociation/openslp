@@ -7,7 +7,7 @@
 
 Name:		%name
 Version: 	%version
-Release:	%mkrel 13
+Release:	14
 Summary:	OpenSLP implementation of Service Location Protocol V2 
 License:	BSD-like
 Group:		Networking/Other
