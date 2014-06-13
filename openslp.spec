@@ -5,7 +5,7 @@
 Summary:	OpenSLP implementation of Service Location Protocol V2 
 Name:		openslp
 Version:	1.2.1
-Release:	18
+Release:	19
 License:	BSD-like
 Group:		Networking/Other
 Url:		http://www.openslp.org/
