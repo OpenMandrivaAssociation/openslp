@@ -10,7 +10,7 @@ Release:	6
 Summary:	OpenSLP implementation of Service Location Protocol V2
 License:	BSD-like
 Group:		Networking/Other
-URL:		http://www.openslp.org/
+URL:		https://www.openslp.org/
 Source0:	http://prdownloads.sourceforge.net/openslp/%{name}-%{version}.tar.gz
 Patch0:		openslp-1.2.1-lsb.patch
 
