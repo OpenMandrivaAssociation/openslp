@@ -14,6 +14,11 @@ URL:		https://www.openslp.org/
 Source0:	http://prdownloads.sourceforge.net/openslp/%{name}-%{version}.tar.gz
 Patch0:		openslp-1.2.1-lsb.patch
 
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 %description
 Service Location Protocol is an IETF standards track protocol that
 provides a framework to allow networking applications to discover the
